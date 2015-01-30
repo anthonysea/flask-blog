@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if user %}
+<h2>Hello, {{ user.nickname }}</h2>
+{% else %}
+<h2>Hello</h2>
+{% endif %}
+{% for post in posts %}
+<div>
+	<p>{{ post.author.nickname }} says: <b>{{ post.body }}</b></p>
+</div>
+{% endfor %}
+{% endblock %}
