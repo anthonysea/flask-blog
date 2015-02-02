@@ -1,2 +1,5 @@
 flask/
 *.pyc
+*.db
+db_repository/
+.idea/
